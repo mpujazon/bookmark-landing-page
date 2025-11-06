@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
@@ -48,24 +49,25 @@
             <div class="features-tabs">
                 <ul>
                     <hr>
-                    <li id="tab-simple-bookmarking" class="selected tab">Simple Bookmarking</li>
+                    <li id="tab1" class="selected tab">Simple Bookmarking</li>
                     <hr>
-                    <li id="tab-speedy-searching" class="tab">Speedy Searching</li>
+                    <li id="tab2" class="tab">Speedy Searching</li>
                     <hr>
-                    <li id="tab-easy-sharing" class="tab">Easy Sharing</li>
+                    <li id="tab3" class="tab">Easy Sharing</li>
                     <hr>
                 </ul>
-                <div class="tab-content">
-                    <div id="tab1-content" class="hidden">
+                <div class="features-content">
+                    <div id="tab1-content" class="tab-content">
                         <div class="tab-illustration-container">
                             <img class="tab1-illustration" src="/images/illustration-features-tab-1.svg" alt="Feature Illustration">
                             <img class="tab1-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">
                         </div>
+                        <br>
                         <h2>Bookmark in one click</h2>
                         <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                         <a class="primary-button" href="#">More info</a>
                     </div>
-                    <div id="tab2-content" class="hidden">
+                    <div id="tab2-content" class="tab-content hidden">
                         <div class="tab-illustration-container">
                             <img class="tab2-illustration" src="/images/illustration-features-tab-2.svg" alt="Feature Illustration">
                             <img class="tab2-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">
@@ -74,7 +76,7 @@
                         <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
                         <a class="primary-button" href="#">More info</a>
                     </div>
-                    <div id="tab3-content">
+                    <div id="tab3-content" class="tab-content hidden">
                         <div class="tab-illustration-container">
                             <img class="tab3-illustration" src="/images/illustration-features-tab-3.svg" alt="Feature Illustration">
                             <img class="tab3-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">

@@ -185,7 +185,7 @@ hr{
     border-bottom: .25rem solid var(--clr-red-400);
     color: var(--clr-blue-950);
 }
-.tab-content{
+.features-content{
     padding: 2.75rem 0;
 }
 .tab-illustration-container {
@@ -193,7 +193,7 @@ hr{
     width: 100%;
 }
 .tab1-decoration-rectangle{
-    scale: .85;
+    scale: 1;
     position: absolute;
     width: 100%;
     top: 15%;
