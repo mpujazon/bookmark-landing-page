@@ -4,6 +4,7 @@ let mobileNav = document.getElementById("mobile-nav");
 let headerNavIcon = document.getElementById("header-nav-icon");
 
 const toggleMobileNav = () => {
+    window.scrollTo(0,0);
     mobileNav.classList.toggle("hidden");
     body.classList.toggle("no-scroll");
     headerNavIcon.getAttribute("src").includes("icon-hamburger.svg")?
