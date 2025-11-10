@@ -488,5 +488,33 @@ hr{
     font-style: italic;
     line-height: 120%;
     letter-spacing: .0156rem;
-
+}
+footer{
+    background-color: var(--clr-blue-950);
+    padding: 2.0625rem 7.1019rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-900);
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-300);
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    color: var(--clr-white);
+    text-align: center;
+    text-decoration: none;
+}
+footer .social-media-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-500);
 }
