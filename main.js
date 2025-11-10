@@ -17,9 +17,9 @@ let featuresTabs = document.querySelectorAll(".features-tabs li");
 let featuresContent = document.querySelectorAll(".features-content .tab-content");
 
 featuresTabs.forEach((item)=>{
-    item.addEventListener("click",()=>{
-        selectTab(event.currentTarget);
-        showTabContent(event.currentTarget.id);
+    item.addEventListener("click",(e)=>{
+        selectTab(e.currentTarget);
+        showTabContent(e.currentTarget.id);
     })
 });
 
@@ -45,8 +45,8 @@ const showTabContent = (tabToShowId) => {
 let questions = document.querySelectorAll(".question");
 
 questions.forEach((item) => {
-    item.addEventListener("click", ()=>{
-        let clickedQuestionId = event.currentTarget.id;
+    item.addEventListener("click", (e)=>{
+        let clickedQuestionId = e.currentTarget.id;
         let icon = document.querySelector(`#${clickedQuestionId} img`);
         let answer = document.querySelector(`#${clickedQuestionId} .answer`);
         
@@ -56,3 +56,28 @@ questions.forEach((item) => {
             :(icon.setAttribute("src","/images/icon-arrow.svg"));
     })
 });
+
+// Form Submit Validation
+let form = document.getElementById("newsletter-form");
+let inputGroup = document.getElementById("input-group");
+let inputTooltip = document.getElementById("input-tooltip");
+let errorIcon = 
+
+form.addEventListener("submit", (e)=>{
+    e.preventDefault();
+    let input = document.querySelector(`#newsletter-form input`);
+    if (validEmail(input.value.trim())){
+        alert("Thanks for subscribing!");
+        inputGroup.classList.remove("error");
+        inputTooltip.classList.add("hidden");
+    }else{
+        inputGroup.classList.add("error");
+        inputTooltip.classList.remove("hidden");
+    }
+    
+});
+
+const validEmail = (input) => {
+    if (input.includes("@")) return true;
+    return false;
+}
