@@ -105,16 +105,19 @@ hr{
     align-items: center;
     padding: var(--spacing-500) 0;
 }
-.header #hamburger-icon{
+#header-nav-icon{
+    z-index: 4;
+}
+.header #header-nav-icon{
     height: .9375rem;
     width: 1.125rem;
 }
-#hamburger-icon:hover{
+#header-nav-icon:hover{
     cursor: pointer;
 }
 
 /* Nav Styles*/
-.mobile-nav{
+#mobile-nav{
     position: absolute;
     top: 0;
     left: 0;
@@ -127,23 +130,23 @@ hr{
     gap: var(--spacing-500);
     padding: var(--spacing-500) var(--spacing-400);
 }
-.mobile-nav-header{
+#mobile-nav-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.mobile-nav ul{
+#mobile-nav ul{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-300);
 }
-.mobile-nav hr{
+#mobile-nav hr{
     background-color: hsla(0, 0%, 59%, .4);
 }
-.mobile-nav li{
+#mobile-nav li{
     list-style: none;
 }
-.mobile-nav a{
+#mobile-nav a{
     display: inline-block;
     width: 100%;
     color: var(--clr-white);
@@ -163,17 +166,13 @@ hr{
     line-height: 1.0625rem;
     letter-spacing: .1444rem;
 }
-.nav-button:hover{
-    background-color: var(--clr-white);
-    color: var(--clr-blue-950);
-}
-.mobile-nav .social-media-links{
+#mobile-nav .social-media-links{
     margin-top: auto;
     display: flex;
     justify-content: center;
     gap: var(--spacing-500);
 }
-.mobile-nav .social-media-links a{
+#mobile-nav .social-media-links a{
     width: fit-content;
 }
 /*Hero Section*/

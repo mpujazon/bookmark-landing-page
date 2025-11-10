@@ -1,3 +1,17 @@
+// Mobile Nav Interactivity
+let body = document.getElementsByTagName("body")[0];
+let mobileNav = document.getElementById("mobile-nav");
+let headerNavIcon = document.getElementById("header-nav-icon");
+
+const toggleMobileNav = () => {
+    mobileNav.classList.toggle("hidden");
+    body.classList.toggle("no-scroll");
+    headerNavIcon.getAttribute("src").includes("icon-hamburger.svg")?
+        (headerNavIcon.setAttribute("src","/images/icon-close.svg"))
+        :(headerNavIcon.setAttribute("src","/images/icon-hamburger.svg"));
+}
+
+// Tab Interactivity
 let featuresTabs = document.querySelectorAll(".features-tabs li");
 let featuresContent = document.querySelectorAll(".features-content .tab-content");
 
@@ -6,7 +20,7 @@ featuresTabs.forEach((item)=>{
         selectTab(event.currentTarget);
         showTabContent(event.currentTarget.id);
     })
-})
+});
 
 const selectTab = (tabToSelect) =>{
     featuresTabs.forEach((item)=>{
