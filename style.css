@@ -115,6 +115,12 @@ hr{
     outline: .125rem solid var(--clr-red-400);
     cursor: pointer;
 }
+svg{
+    fill: var(--clr-white);
+}
+svg:hover{
+    fill: var(--clr-red-400);
+}
 /*Header Styles*/
 .header-group{
     display: flex;
@@ -261,7 +267,7 @@ hr{
     line-height: 165%;
 }
 .features-tabs li:hover{
-    color: var(--clr-blue-950);
+    color: var(--clr-red-400);
 }
 .features-tabs li.selected{
     border-bottom: .25rem solid var(--clr-red-400);
@@ -394,6 +400,10 @@ hr{
     flex-direction: column;
     gap: var(--spacing-200);
 }
+.faq-accordeon-group .question span:hover{
+    color: var(--clr-red-400);
+    cursor: pointer;
+}
 .faq-accordeon-group .question .faq-title{
     display: flex;
     justify-content: space-between;
@@ -517,4 +527,7 @@ footer .social-media-links{
     justify-content: center;
     align-items: center;
     gap: var(--spacing-500);
+}
+footer a:hover{
+    color: var(--clr-red-400);
 }
