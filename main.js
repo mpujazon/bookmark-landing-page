@@ -39,3 +39,19 @@ const showTabContent = (tabToShowId) => {
     
     tabElementToShow.classList.remove("hidden");
 }
+
+//FAQ Accordeon Interactivity
+let questions = document.querySelectorAll(".question");
+
+questions.forEach((item) => {
+    item.addEventListener("click", ()=>{
+        let clickedQuestionId = event.currentTarget.id;
+        let icon = document.querySelector(`#${clickedQuestionId} img`);
+        let answer = document.querySelector(`#${clickedQuestionId} .answer`);
+        
+        answer.classList.toggle("hidden");
+        icon.getAttribute("src").includes("icon-arrow.svg")?
+            (icon.setAttribute("src","/images/icon-arrow-close.svg"))
+            :(icon.setAttribute("src","/images/icon-arrow.svg"));
+    })
+});
