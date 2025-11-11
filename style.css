@@ -259,7 +259,6 @@ svg:hover{
 }
 .features-tabs{
     text-align: center;
-
 }
 .features-tabs li{
     list-style-type: none;
@@ -279,6 +278,12 @@ svg:hover{
 }
 .features-content{
     padding: 2.75rem 0;
+}
+.tab-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    align-items: center;
 }
 .tab-illustration-container {
     position: relative;
@@ -339,10 +344,9 @@ svg:hover{
     flex-direction: column;
     gap: var(--spacing-400);
     justify-content: space-between;
-    align-items: center;
 }
 #tab1-content h2{
-        margin-top: var(--spacing-500);
+    margin-top: var(--spacing-500);
 }
 
 /* Download Section */
@@ -633,3 +637,146 @@ footer a:hover{
     }
 }
 
+/* Desktop: From 992px viewport width */
+@media (min-width: 62rem){
+    /* General Styles */
+    h2{
+        font-size: 3rem;
+        line-height: 110%;
+    }
+    p{
+        font-size: 1.125rem;
+        line-height: 155%;
+    }
+    /* Nav */
+    #header-nav-icon{
+        display: none;
+    }
+    .desktop-nav{
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-500);
+    }
+    .desktop-nav li{
+        list-style: none;
+    }
+    
+    .desktop-nav a{
+        text-decoration: none;
+        color: var(--clr-blue-950);
+    }
+
+    .desktop-nav a:hover{
+        color: var(--clr-red-400);
+    }
+    .desktop-nav .login-btn{
+        color: var(--clr-white);
+        padding: var(--spacing-100) var(--spacing-400);
+    }
+    /* Hero Section */
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .hero-illustration-container{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        scale: .9;
+        position: relative;
+    }
+    .hero-decoration-rectangle{
+        left: 122px;
+    }
+    .hero-text{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0;
+        padding-left: 8.3125rem;
+        align-items: flex-start;
+    }
+    .hero-text h2{
+        text-align: left;
+        margin: 0 4.5rem 0 0;
+    }
+    .hero-text p{
+        text-align: left;
+    }
+    /* Features Section */
+    .features-header {
+        margin: 0 25.7rem;
+    }
+    .tab-illustration-container{
+        scale: .8;
+    }
+    .tab-text{
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .tab-text h2, .tab-text p{
+        margin: 0;
+        text-align: left;
+    }
+    #tab1-content, #tab2-content, #tab3-content{
+        flex-direction: row;
+        gap: var(--spacing-400);
+        justify-content: flex-start;
+    }
+    #tab1-content{
+        margin-top: var(--spacing-600);
+    }
+    .tab1-decoration-rectangle{
+        left: -8rem;
+    }
+    .tab2-decoration-rectangle{
+        left: -8.5625rem;
+    }
+    .tab3-decoration-rectangle{
+        left: -8.5625rem;
+    }
+
+    /* Downloads Section */
+    .download-header{
+        margin: auto;
+        max-width: 33.8125rem;
+    }
+    .download-header h2{
+        max-width: 33.8125rem;
+    }
+    .download-navigators{
+        gap: var(--spacing-300);
+    }
+    .navigator-card:nth-child(2){
+        position: relative;
+        top: 2.5rem;
+    }
+    .navigator-card:nth-child(3){
+        position: relative;
+        top: 5rem;
+    }
+    /* FAQ Section */
+    .faq{
+        padding-top: var(--spacing-800);
+    }
+    .faq-header p{
+        max-width: 33.75rem;
+        margin: auto;
+    }
+    .faq-accordeon-group{
+        max-width: 33.75rem;
+    }
+    /* Newsletter Section */
+    .newsletter-header, .newsletter-form{
+        max-width: 27.625rem;
+    }
+    .newsletter-header h2{
+        font-size: 2rem;
+    }
+    /* Footer */
+    footer{
+        justify-content: flex-start;
+    }
+    footer .social-media-links{
+        margin-left: auto;
+    }
+}

@@ -11,12 +11,14 @@
     <header>
         <div class="header-group">
             <img src="/images/logo-bookmark.svg" alt="Logo bookmark">
-            <ul class="desktop-nav">
-                <li><a href="">FEATURES</a></li>
-                <li><a href="">PRICING</a></li>
-                <li><a href="">CONTACT</a></li>
-                <li><a href="" class="login-btn tertiary-button">LOGIN</a></li>
-            </ul>
+            <nav class="desktop-nav">
+                <ul class="desktop-nav">
+                    <li><a href="">FEATURES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="" class="login-btn tertiary-button">LOGIN</a></li>
+                </ul>
+            </nav>
             <img onclick="toggleMobileNav()" id="header-nav-icon" src="/images/icon-hamburger.svg" alt="Icon hamburger">
         </div>
         <nav id="mobile-nav" class="hidden">
@@ -79,27 +81,33 @@
                             <img class="tab1-illustration" src="/images/illustration-features-tab-1.svg" alt="Feature Illustration">
                             <img class="tab1-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">
                         </div>
-                        <h2>Bookmark in one click</h2>
-                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                        <a class="primary-button" href="#">More info</a>
+                        <div class="tab-text">
+                            <h2>Bookmark in one click</h2>
+                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                            <a class="primary-button" href="#">More info</a>
+                        </div>
                     </div>
                     <div id="tab2-content" class="tab-content hidden">
                         <div class="tab-illustration-container">
                             <img class="tab2-illustration" src="/images/illustration-features-tab-2.svg" alt="Feature Illustration">
                             <img class="tab2-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">
                         </div>
-                        <h2>Intelligent search</h2>
-                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                        <a class="primary-button" href="#">More info</a>
+                        <div class="tab-text">
+                            <h2>Intelligent search</h2>
+                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="primary-button" href="#">More info</a>
+                        </div>
                     </div>
                     <div id="tab3-content" class="tab-content hidden">
                         <div class="tab-illustration-container">
                             <img class="tab3-illustration" src="/images/illustration-features-tab-3.svg" alt="Feature Illustration">
                             <img class="tab3-decoration-rectangle" src="/images/rectangle.png" alt="Decoration rectangle">
                         </div>
-                        <h2>Share your bookmarks</h2>
-                        <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                        <a class="primary-button" href="#">More info</a>
+                        <div class="tab-text">
+                            <h2>Share your bookmarks</h2>
+                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="primary-button" href="#">More info</a>
+                        </div>
                     </div>
                 </div>
             </div>
