@@ -20,5 +20,8 @@
   },
   "dependencies": {
     "sass": "^1.94.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
   }
 }
