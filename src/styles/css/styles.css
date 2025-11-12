@@ -153,27 +153,19 @@ svg:hover {
   gap: 2.5rem;
   padding: 2.5rem 2rem;
 }
-
-#mobile-nav-header {
+#mobile-nav #mobile-nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 #mobile-nav ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
-#mobile-nav hr {
-  background-color: hsla(0, 0%, 59%, 0.4);
-}
-
 #mobile-nav li {
   list-style: none;
 }
-
 #mobile-nav a {
   display: inline-block;
   width: 100%;
@@ -184,8 +176,10 @@ svg:hover {
   line-height: 17px;
   letter-spacing: 0.1444rem;
 }
-
-.nav-button {
+#mobile-nav hr {
+  background-color: hsla(0, 0%, 59%, 0.4);
+}
+#mobile-nav .nav-button {
   background-color: transparent;
   outline: 2px solid #FFF;
   padding: 0.9375rem;
@@ -195,7 +189,6 @@ svg:hover {
   line-height: 1.0625rem;
   letter-spacing: 0.1444rem;
 }
-
 #mobile-nav .social-media-links {
   margin-top: auto;
   display: flex;
@@ -203,7 +196,6 @@ svg:hover {
   align-items: center;
   gap: 2.5rem;
 }
-
 #mobile-nav .social-media-links a {
   width: fit-content;
 }

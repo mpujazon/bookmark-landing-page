@@ -78,7 +78,6 @@ svg:hover{
     justify-content: space-between;
     align-items: center;
     padding: $spacing-500 $spacing-400;
-
     .desktop-nav{
         display: none;
     }
@@ -104,52 +103,52 @@ svg:hover{
     flex-direction: column;
     gap: $spacing-500;
     padding: $spacing-500 $spacing-400;
-}
-#mobile-nav-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#mobile-nav ul{
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-300;
-}
-#mobile-nav hr{
-    background-color: hsla(0, 0%, 59%, .4);
-}
-#mobile-nav li{
-    list-style: none;
-}
-#mobile-nav a{
-    display: inline-block;
-    width: 100%;
-    color: $clr-white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.25rem;
-    line-height: 17px;
-    letter-spacing: .1444rem;
-}
-.nav-button{
-    background-color: transparent;
-    outline: 2px solid $clr-white;
-    padding: .9375rem;
-    border-radius: .3125rem;
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.0625rem;
-    letter-spacing: .1444rem;
-}
-#mobile-nav .social-media-links{
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: $spacing-500;
-}
-#mobile-nav .social-media-links a{
-    width: fit-content;
+    #mobile-nav-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-300;
+    }
+    li{
+        list-style: none;
+    }
+    a{
+        display: inline-block;
+        width: 100%;
+        color: $clr-white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 17px;
+        letter-spacing: .1444rem;
+    }
+    hr{
+        background-color: hsla(0, 0%, 59%, .4);
+    }
+    .nav-button{
+        background-color: transparent;
+        outline: 2px solid $clr-white;
+        padding: .9375rem;
+        border-radius: .3125rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.0625rem;
+        letter-spacing: .1444rem;
+    }
+    .social-media-links{
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $spacing-500;
+        a{
+            width: fit-content;
+        }
+    }
 }
 /*Hero Section*/
 .hero{
