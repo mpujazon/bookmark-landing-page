@@ -183,7 +183,6 @@ svg:hover{
     justify-content: center;
     gap: $spacing-300;
 }
-
 .hero-buttons-group{
     display: flex;
     justify-content: center;
@@ -207,22 +206,22 @@ svg:hover{
 }
 .features-tabs{
     text-align: center;
-}
-.features-tabs li{
-    list-style-type: none;
-    cursor: pointer;
-    padding: 1.0625rem 0;
-    color: $clr-grey-600;
-    display: inline-block;
-    font-size: .9375rem;
-    line-height: 165%;
-}
-.features-tabs li:hover{
-    color: $clr-red-400;
-}
-.features-tabs li.selected{
-    border-bottom: .25rem solid $clr-red-400;
-    color: $clr-blue-950;
+    li{
+        list-style-type: none;
+        cursor: pointer;
+        padding: 1.0625rem 0;
+        color: $clr-grey-600;
+        display: inline-block;
+        font-size: .9375rem;
+        line-height: 165%;
+        &:hover{
+            color: $clr-red-400;
+        }
+        &.selected{
+            border-bottom: .25rem solid $clr-red-400;
+            color: $clr-blue-950;
+        }
+    }
 }
 .features-content{
     padding: 2.75rem 0;

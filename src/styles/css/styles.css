@@ -265,7 +265,6 @@ svg:hover {
 .features-tabs {
   text-align: center;
 }
-
 .features-tabs li {
   list-style-type: none;
   cursor: pointer;
@@ -275,11 +274,9 @@ svg:hover {
   font-size: 0.9375rem;
   line-height: 165%;
 }
-
 .features-tabs li:hover {
   color: #FA5959;
 }
-
 .features-tabs li.selected {
   border-bottom: 0.25rem solid #FA5959;
   color: #242A45;
