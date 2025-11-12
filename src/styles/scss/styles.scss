@@ -349,39 +349,39 @@ svg:hover{
     flex-direction: column;
     gap: $spacing-200;
 }
-.faq-accordeon-group{
+.faq-accordeon-group{   
     display: flex;
     flex-direction: column;
     gap: $spacing-200;
-}
-.faq-accordeon-group .question{
-    display: flex;
-    flex-direction: column;
-    gap: $spacing-200;
-}
-.faq-accordeon-group .question span:hover{
-    color: $clr-red-400;
-    cursor: pointer;
-}
-.faq-accordeon-group .question .faq-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: $spacing-200;
-}
-.faq-accordeon-group .question span{
-    font-size: .9375rem;
-    line-height: 165%;
-    color: $clr-blue-950;
-}
-.faq-accordeon-group .question img:hover{
-    cursor: pointer;
-}
-.faq-accordeon-group .question .answer{
-    text-align: left;
-}
-.faq-accordeon-group hr{
-    background-color: hsla(0, 0%, 59%, .5);
+    hr{
+        background-color: hsla(0, 0%, 59%, .5);
+    }
+    .question{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing-200;
+        .faq-title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: $spacing-200;
+        }
+        span{
+            font-size: .9375rem;
+            line-height: 165%;
+            color: $clr-blue-950;
+            &:hover{
+                color: $clr-red-400;
+                cursor: pointer;
+            }
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        .answer{
+            text-align: left;
+        }
+    }
 }
 
 /* Newsletter Section */

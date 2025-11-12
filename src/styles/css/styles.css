@@ -430,41 +430,34 @@ svg:hover {
   flex-direction: column;
   gap: 1rem;
 }
-
+.faq-accordeon-group hr {
+  background-color: hsla(0, 0%, 59%, 0.5);
+}
 .faq-accordeon-group .question {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
-.faq-accordeon-group .question span:hover {
-  color: #FA5959;
-  cursor: pointer;
-}
-
 .faq-accordeon-group .question .faq-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-
 .faq-accordeon-group .question span {
   font-size: 0.9375rem;
   line-height: 165%;
   color: #242A45;
 }
-
+.faq-accordeon-group .question span:hover {
+  color: #FA5959;
+  cursor: pointer;
+}
 .faq-accordeon-group .question img:hover {
   cursor: pointer;
 }
-
 .faq-accordeon-group .question .answer {
   text-align: left;
-}
-
-.faq-accordeon-group hr {
-  background-color: hsla(0, 0%, 59%, 0.5);
 }
 
 /* Newsletter Section */
