@@ -78,9 +78,6 @@ svg:hover{
     justify-content: space-between;
     align-items: center;
     padding: $spacing-500 $spacing-400;
-    .desktop-nav{
-        display: none;
-    }
     #header-nav-icon{
         z-index: 4;
         height: .9375rem;
@@ -89,6 +86,9 @@ svg:hover{
             cursor: pointer;
         }
     }
+}
+.desktop-nav{
+    display: none;
 }
 /* Nav Styles*/
 #mobile-nav{

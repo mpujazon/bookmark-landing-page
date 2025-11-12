@@ -127,9 +127,6 @@ svg:hover {
   align-items: center;
   padding: 2.5rem 2rem;
 }
-.header-group .desktop-nav {
-  display: none;
-}
 .header-group #header-nav-icon {
   z-index: 4;
   height: 0.9375rem;
@@ -137,6 +134,10 @@ svg:hover {
 }
 .header-group #header-nav-icon:hover {
   cursor: pointer;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 /* Nav Styles*/
