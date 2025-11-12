@@ -8,8 +8,8 @@ const toggleMobileNav = () => {
     mobileNav.classList.toggle("hidden");
     body.classList.toggle("no-scroll");
     headerNavIcon.getAttribute("src").includes("icon-hamburger.svg")?
-        (headerNavIcon.setAttribute("src","/images/icon-close.svg"))
-        :(headerNavIcon.setAttribute("src","/images/icon-hamburger.svg"));
+        (headerNavIcon.setAttribute("src","src/images/icon-close.svg"))
+        :(headerNavIcon.setAttribute("src","src/images/icon-hamburger.svg"));
 }
 
 // Tab Interactivity
@@ -52,8 +52,8 @@ questions.forEach((item) => {
         closeAllAccordeons();
         answer.classList.remove("hidden");
         icon.getAttribute("src").includes("icon-arrow.svg")?
-            (icon.setAttribute("src","/images/icon-arrow-close.svg"))
-            :(icon.setAttribute("src","/images/icon-arrow.svg"));
+            (icon.setAttribute("src","src/images/icon-arrow-close.svg"))
+            :(icon.setAttribute("src","src/images/icon-arrow.svg"));
     })
 });
 
@@ -62,7 +62,7 @@ const closeAllAccordeons = ()=>{
         let answer = document.querySelector(`#${question.id} .answer`);
         let icon = document.querySelector(`#${question.id} img`);
         answer.classList.add("hidden");
-        icon.setAttribute("src","/images/icon-arrow.svg");
+        icon.setAttribute("src","src/images/icon-arrow.svg");
     });
 }
 

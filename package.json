@@ -1,0 +1,24 @@
+{
+  "name": "bookmark-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/mpujazon/bookmark-landing-page#readme",
+  "bugs": {
+    "url": "https://github.com/mpujazon/bookmark-landing-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpujazon/bookmark-landing-page.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch src/styles/scss:src/styles/css"
+  },
+  "dependencies": {
+    "sass": "^1.94.0"
+  }
+}
