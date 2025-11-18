@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --clr-white: #FFF;
+  --clr-black: #000;
+  --clr-blue-950: #242A45;
+  --clr-blue-600: #5267DF;
+  --clr-grey-600: #5B6074;
+  --clr-grey-50: #F7F7F7;
+  --clr-red-400: #FA5959;
+}
+
+*{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.selected{
+    border-bottom: .25rem solid var(--clr-red-400);
+    color: var(--clr-blue-950);
+}
+
+.error{
+  background-color: var(--clr-red-400);
+  border-radius: 6px;
+  padding: 2px;
+}
+
+#input-group.error input{
+  background-image: url("/src/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px top 10px ;
+}

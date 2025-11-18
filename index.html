@@ -4,234 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
-    <link rel="stylesheet" href="/src/styles/css/styles.css">
-    <script src="src/js/main.js" defer></script>
+    <link rel="stylesheet" href="/src/styles/css/output.css">
+    <script src="src/js/tailwind.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">  
 </head>
-<body>
+<body id="body" class="bg-white font-[Rubik] text-[var(--clr-blue-950)]">
     <header>
-        <div class="header-group">
+        <div class="flex items-center justify-between p-8 lg:mx-auto lg:px-16 lg:py-11">
             <img src="src/images/logo-bookmark.svg" alt="Logo bookmark">
-            <nav class="desktop-nav">
-                <ul class="desktop-nav">
-                    <li><a href="">FEATURES</a></li>
-                    <li><a href="">PRICING</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="" class="login-btn tertiary-button">LOGIN</a></li>
+            <nav class="hidden flex lg:flex ">
+                <ul class="flex gap-12">
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="">FEATURES</a></li>
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="">PRICING</a></li>
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="">CONTACT</a></li>
+                    <li><a class="text-white bg-[var(--clr-red-400)] py-1 px-6 font-['Rubik'] font-medium rounded-md w-full md:w-1/3 md:py-2 hover:bg-white hover:text-[var(--clr-red-400)] hover:outline hover:outline-[var(--clr-red-600)] hover:outline-2 hover:-outline-offset-2" href="">LOGIN</a></li>
                 </ul>
             </nav>
-            <img onclick="toggleMobileNav()" id="header-nav-icon" src="src/images/icon-hamburger.svg" alt="Icon hamburger">
+            <img id="open-nav-icon" class="z-20 hover:cursor-pointer lg:hidden" src="src/images/icon-hamburger.svg" alt="Open Mobile Nav Icon">
         </div>
-        <nav id="mobile-nav" class="hidden">
-            <div class="mobile-nav-header">
+        <nav id="mobile-nav" class="hidden h-dvh absolute z-10 inset-0 bg-[hsla(229,31%,21%,.95)] flex flex-col pb-8">
+            <div class="p-8">
                 <img src="src/images/logo-bookmark-white.svg" alt="Logo bookmark"></h1>
             </div>
-            <ul>
-                <hr>
-                <li><a href="">FEATURES</a></li>
-                <hr>
-                <li><a href="">PRICING</a></li>
-                <hr>
-                <li><a href="">CONTACT</a></li>
-                <hr>
-                <li><a href="" class="nav-button">LOGIN</a></li>
+            <ul class="w-10/12 mx-auto">
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <li><a href="" class="inline-block text-center w-full text-white text-xl tracking-widest my-4">FEATURES</a></li>
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <li><a href="" class="inline-block text-center w-full text-white text-xl tracking-widest my-4">PRICING</a></li>
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <li><a href="" class="inline-block text-center w-full text-white text-xl tracking-widest my-4">CONTACT</a></li>
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <li><a href="" class="inline-block text-center w-full text-white text-xl tracking-widest my-6 font-medium p-2 outline outline-white outline-2 rounded-md">LOGIN</a></li>
             </ul>
-            <div class="social-media-links">
+            <div class="flex justify-center items-center gap-4 mt-auto">
                 <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="backgroundColor" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="backgroundColor" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
-            </a>
+                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="backgroundColor" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+                <a href="#">
+                    <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="backgroundColor" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+                </a>
             </div>
         </nav>
     </header>
-    <main>
-        <section class="hero">
-            <div class="hero-illustration-container">
-                <img class="hero-illustration" src="src/images/illustration-hero.svg" alt="Hero Illustration">
-                <img class="hero-decoration-rectangle" src="src/images/rectangle.png" alt="Decoration rectangle">
+    <main class="flex flex-col gap-32">
+        <section class="lg:flex lg:flex-row-reverse lg:gap-10">
+            <div class="relative overflow-hidden lg:right-14">
+                <img class="scale-90 mx-auto" src="src/images/illustration-hero.svg" alt="Hero Illustration">
+                <img class="absolute bottom-0 -right-4 -z-10  pointer-events-none scale-90 min-[445px]:scale-150 min-[27.8125rem]:bottom-12 md:scale-150 md:top-48 md:right-4   " src="src/images/rectangle.png" alt="Decoration rectangle">
             </div>
-            <div class="hero-text">
-                <h2>A Simple Bookmark Manager</h2>
-                <p>A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
-                <div class="hero-buttons-group">
-                    <a href="#" class="primary-button">Get it on Chrome</a>
-                    <a href="#" class="secondary-button">Get it on Firefox</a>
+            <div class="flex flex-col items-center justify-center gap-6 text-center w-5/6 max-w-[540px] mx-auto lg:text-left lg:items-start lg:gap-10">
+                <h2 class="font-medium text-3xl md:text-4xl md:mx-6 lg:m-0">A Simple Bookmark Manager</h2>
+                <p class="text-[var(--clr-grey-600)] md:text-lg">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+                <div class="flex gap-4">
+                    <a class="bg-[var(--clr-blue-600)] text-white font-medium p-2 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2 md:p-3" href="#">Get it on Chrome</a>
+                    <a class="bg-[var(--clr-grey-50)] font-medium p-2 rounded-md hover:bg-white hover:text-[var(--clr-grey-500)] hover:outline hover:outline-2 hover:outline-[var(--clr-grey-500)] -outline-offset-2 md:p-3" href="#">Get it on Firefox</a>
                 </div>
             </div>
         </section>
-        <section class="features">
-            <div class="features-header">
-                <h2>Features</h2>
-                <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+        <section class="flex flex-col items-center justify-center gap-6 text-center mx-auto">
+            <div class="flex flex-col items-center justify-center gap-6 w-5/6 max-w-[540px] lg:w-full">
+                <h2 class="text-center font-medium text-3xl md:text-4xl">Features</h2>
+                <p class="text-[var(--clr-grey-600)] md:text-lg">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
-            <div class="features-tabs">
-                <ul>
-                    <hr>
-                    <li id="tab1" class="selected tab">Simple Bookmarking</li>
-                    <hr>
-                    <li id="tab2" class="tab">Speedy Searching</li>
-                    <hr>
-                    <li id="tab3" class="tab">Easy Sharing</li>
-                    <hr>
-                </ul>
+            <div class="flex flex-col gap-8">
+                <div class="flex flex-col">
+                    <ul class="features-tabs flex flex-col items-center w-4/5 max-w-80 mx-auto md:flex-row md:justify-between md:w-[540px] md:max-w-[540px]">
+                        <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50 md:hidden">
+                        <li id="tab1" class="selected py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Simple Bookmarking</li>
+                        <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50 md:hidden">
+                        <li id="tab2" class="py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Speedy Searching</li>
+                        <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50 md:hidden">
+                        <li id="tab3" class="py-4 hover:text-[var(--clr-red-400)] hover:cursor-pointer">Easy Sharing</li>
+                        <hr class="bg-[#979797] border-none h-[.0938rem] w-full max-w-80 opacity-50 md:hidden">
+                    </ul>
+                    <hr class="hidden bg-[#979797] border-none h-[.0938rem] w-full opacity-50 md:inline-block">
+                </div>
                 <div class="features-content">
-                    <div id="tab1-content" class="tab-content">
-                        <div class="tab-illustration-container">
-                            <img class="tab1-illustration" src="src/images/illustration-features-tab-1.svg" alt="Feature Illustration">
-                            <img class="tab1-decoration-rectangle" src="src/images/rectangle.png" alt="Decoration rectangle">
+                    <div id="tab1-content" class="tab-content flex flex-col gap-8 w-full lg:flex-row lg:items-center">
+                        <div class="relative flex justify-center">
+                            <img class="scale-[.8]" src="src/images/illustration-features-tab-1.svg" alt="Feature Illustration">
+                            <img class="absolute rotate-180 left-0 top-[58px] -z-10" src="src/images/rectangle.png" alt="Decoration rectangle">
                         </div>
-                        <div class="tab-text">
-                            <h2>Bookmark in one click</h2>
-                            <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                            <a class="primary-button" href="#">More info</a>
-                        </div>
-                    </div>
-                    <div id="tab2-content" class="tab-content hidden">
-                        <div class="tab-illustration-container">
-                            <img class="tab2-illustration" src="src/images/illustration-features-tab-2.svg" alt="Feature Illustration">
-                            <img class="tab2-decoration-rectangle" src="src/images/rectangle.png" alt="Decoration rectangle">
-                        </div>
-                        <div class="tab-text">
-                            <h2>Intelligent search</h2>
-                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                            <a class="primary-button" href="#">More info</a>
+                        <div class="flex flex-col gap-4 items-center w-5/6 max-w-[540px] mx-auto lg:text-left lg:items-start lg:gap-6">
+                            <h2 class="text-center font-medium text-3xl md:text-4xl">Bookmark in one click</h2>
+                            <p class="text-[var(--clr-grey-600)] md:text-lg">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md w-fit hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
                         </div>
                     </div>
-                    <div id="tab3-content" class="tab-content hidden">
-                        <div class="tab-illustration-container">
-                            <img class="tab3-illustration" src="src/images/illustration-features-tab-3.svg" alt="Feature Illustration">
-                            <img class="tab3-decoration-rectangle" src="src/images/rectangle.png" alt="Decoration rectangle">
+                    <div id="tab2-content" class="tab-content hidden flex flex-col gap-8 mx-auto lg:flex-row lg:items-center">
+                        <div class="relative flex justify-center">
+                            <img class="scale-[.8]" src="src/images/illustration-features-tab-2.svg" alt="Feature Illustration">
+                            <img class="absolute rotate-180 left-0 top-[120px] -z-10" src="src/images/rectangle.png" alt="Decoration rectangle">
                         </div>
-                        <div class="tab-text">
-                            <h2>Share your bookmarks</h2>
-                            <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                            <a class="primary-button" href="#">More info</a>
+                        <div class="flex flex-col gap-4 items-center w-5/6 max-w-[540px] mx-auto lg:text-left lg:items-start lg:gap-6">
+                            <h2 class="text-center font-medium text-3xl md:text-4xl">Intelligent search</h2>
+                            <p class="text-[var(--clr-grey-600)] md:text-lg">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
+                        </div>
+                    </div>
+                    <div id="tab3-content" class="tab-content hidden flex flex-col gap-8 mx-auto lg:flex-row lg:items-center">
+                        <div class="relative flex justify-center">
+                            <img class="scale-[.8]" src="src/images/illustration-features-tab-3.svg" alt="Feature Illustration">
+                            <img class="absolute rotate-180 left-0 top-[120px] -z-10" src="src/images/rectangle.png" alt="Decoration rectangle">
+                        </div>
+                        <div class="flex flex-col gap-4 items-center w-5/6 max-w-[540px] mx-auto lg:text-left lg:items-start lg:gap-6">
+                            <h2 class="text-center font-medium text-3xl md:text-4xl">Share your bookmarks</h2>
+                            <p class="text-[var(--clr-grey-600)] md:text-lg">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+                            <a class="bg-[var(--clr-blue-600)] text-white font-medium p-3 rounded-md hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More info</a>
                         </div>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <section class="download">
-            <div class="download-header">
-                <h2>Download the extension</h2>
-                <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        <section class="flex flex-col items-center justify-center gap-10 text-center w-5/6 max-w-[904px] mx-auto">
+            <div class="flex flex-col gap-4 lg:max-w-[614px]">
+                <h2 class="text-center font-medium text-3xl md:text-4xl">Download the extension</h2>
+                <p class="text-[var(--clr-grey-600)] md:text-lg">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
             </div>
-            <div class="download-navigators">
-                <div class="navigator-card">
-                    <div class="navigator-info">
-                        <img src="src/images/logo-chrome.svg" alt="Chrome logo" class="navigator-logo">
-                        <h3>Add to Chrome</h3>
-                        <p>Minimum version 62</p>
+            <div class="flex flex-col gap-10 w-full max-w-[280px] md:flex-row md:max-w-[614px] md:gap-2 lg:gap-8 lg:max-w-[904px]">
+                <div class="flex flex-col gap-6 items-center justify-center shadow-md rounded-2xl p-5">
+                    <div class="flex flex-col items-center gap-6">
+                        <img class="w-[100px] aspect-auto md:w-[72px] lg:w-[100px]" src="src/images/logo-chrome.svg" alt="Chrome logo">
+                        <h3 class="text-2xl font-medium md:text-xl">Add to Chrome</h3>
+                        <p class="text-[var(--clr-grey-600)] md:text-md">Minimum version 62</p>
                     </div>
                     <img src="src/images/bg-dots.svg" alt="Decoration Dots">
-                    <a href="#" class="primary-button">Add & Install Extension</a>
+                    <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md md:text-xs md:px-3 lg:w-full hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">Add & Install Extension</a>
                 </div>
-                <div class="navigator-card">
-                    <div class="navigator-info">
-                        <img src="src/images/logo-firefox.svg" alt="Firefox logo" class="navigator-logo">
-                        <h3>Add to Firefox</h3>
-                        <p>Minimum version 55</p>
+                <div class="flex flex-col gap-6 items-center justify-center shadow-md rounded-2xl p-5 lg:translate-y-10">
+                    <div class="flex flex-col items-center gap-6">
+                        <img class="w-[100px] aspect-auto md:w-[72px] lg:w-[100px]" src="src/images/logo-firefox.svg" alt="Firefox logo">
+                        <h3 class="text-2xl font-medium md:text-xl">Add to Firefox</h3>
+                        <p class="text-[var(--clr-grey-600)] md:text-md">Minimum version 55</p>
                     </div>
                     <img src="src/images/bg-dots.svg" alt="Decoration Dots">
-                    <a href="#" class="primary-button">Add & Install Extension</a>
+                    <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md md:text-xs md:px-3 lg:w-full hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">Add & Install Extension</a>
                 </div>
-                <div class="navigator-card">
-                    <div class="navigator-info">
-                        <img src="src/images/logo-opera.svg" alt="Opera logo" class="navigator-logo">
-                        <h3>Add to Opera</h3>
-                        <p>Minimum version 46</p>
+                <div class="flex flex-col gap-6 items-center justify-center shadow-md rounded-2xl p-5 lg:translate-y-20">
+                    <div class="flex flex-col items-center gap-6">
+                        <img class="w-[100px] aspect-auto md:w-[72px] lg:w-[100px]" src="src/images/logo-opera.svg" alt="Opera logo">
+                        <h3 class="text-2xl font-medium md:text-xl">Add to Opera</h3>
+                        <p class="text-[var(--clr-grey-600)] md:text-md">Minimum version 46</p>
                     </div>
                     <img src="src/images/bg-dots.svg" alt="Decoration Dots">
-                    <a href="#" class="primary-button">Add & Install Extension</a>
+                    <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md md:text-xs md:px-3 lg:w-full hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">Add & Install Extension</a>
                 </div>
             </div>
         </section>
-        <section class="faq">
-            <div class="faq-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
+        <section class="flex flex-col items-center justify-center gap-10 text-center w-5/6 max-w-[540px] mx-auto lg:mt-20">
+            <div class="flex flex-col gap-4">
+                <h2 class="text-center font-medium text-3xl md:text-4xl">Frequently Asked Questions</h2>
+                <p class="text-[var(--clr-grey-600)] md:text-lg">Here are some of our FAQs. If you have any other questions you'd like answered please feel free to email us.</p>
             </div>
-            <div class="faq-accordeon-group">
-                <div id="question-1" class="question">
-                    <div class="faq-title">
+            <div class="flex flex-col gap-4 text-left w-full">
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <div id="question1" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center gap-1 hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>What is Bookmark?</span>
-                        <img class="faq-icon" src="src/images/icon-arrow.svg" alt="Arrow">
+                        <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p class="answer hidden">
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
                         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
                     </p>
                 </div>
-                <hr>
-                <div id="question-2" class="question">
-                    <div class="faq-title">
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <div id="question2" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>How can I request a new browser?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p class="answer hidden">
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         ivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
                         Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
                         ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
                         Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
                     </p>
                 </div>
-                <hr>
-                <div id="question-3" class="question">
-                    <div class="faq-title">
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <div id="question3" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>Is there a mobile app?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p class="answer hidden">
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
                         urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
                         sollicitudin ex et ultricies bibendum.
                     </p>
                 </div>
-                <hr>
-                <div id="question-4" class="question">
-                    <div class="faq-title">
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
+                <div id="question4" class="question flex flex-col gap-4">
+                    <div class="flex justify-between items-center gap-2 hover:text-[var(--clr-red-400)] hover:cursor-pointer">
                         <span>What about other Chromium browsers?</span>
                         <img src="src/images/icon-arrow.svg" alt="Arrow">
                     </div>
-                    <p class="answer hidden">
+                    <p class="answer hidden text-[var(--clr-grey-600)]">
                         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
                         vitae neque eget nisl gravida pellentesque non ut velit.
                     </p>
                 </div>
-                <hr>
+                <hr class="bg-[#979797] border-none h-[.075rem] opacity-40">
             </div>
-            <a href="#" class="primary-button">More Info</a>
+            <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md mb-6 hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More Info</a>
         </section>
-        <section class="newsletter">
-            <div class="newsletter-header">
-                <h3>35,000+ ALREADY JOINED</h3>
-                <h2>Stay up-to-date with what we're doing</h2>
+        <section class="bg-[var(--clr-blue-600)] text-white py-9 flex flex-col gap-8 lg:gap-16">
+            <div class="w-5/6 mx-auto flex flex-col items-center max-w-[442px]">
+                <h3 class="text-xs leading-[300%] tracking-[5px] font-medium">35,000+ ALREADY JOINED</h3>
+                <h2 class="text-3xl text-center font-medium leading-[135%]">Stay up-to-date with what we're doing</h2>
             </div>
-            <form id="newsletter-form">
-                <div id="input-group">
-                    <input type="text" placeholder="Enter your email address" aria-placeholder="Enter your email address">
-                    <p id="input-tooltip" class="hidden">Whoops, make sure it's an email.</p>
+            <form id="newsletter-form" class="w-5/6 mx-auto flex flex-col items-center gap-4 max-w-[442px] md:flex-row md:items-baseline">
+                <div id="input-group" class="w-full md:w-2/3">
+                    <input class="w-full p-2 rounded-md text-[var(--clr-blue-950)]" type="text" placeholder="Enter your email address" aria-placeholder="Enter your email address">
+                    <p id="input-tooltip" class="hidden px-2 py-1 text-xs font-medium italic">Whoops, make sure it's an email.</p>
                 </div>
-                <button class="tertiary-button" type="submit">Contact Us</button>
+                <button class="bg-[var(--clr-red-400)] py-3 font-['Rubik'] font-medium rounded-md w-full md:w-1/3 md:py-2 hover:bg-white hover:text-[var(--clr-red-400)] hover:outline hover:outline-[var(--clr-red-600)] hover:outline-2 hover:-outline-offset-2" type="submit">Contact Us</button>
             </form>
         </section>
     </main>
-    <footer>
-        <img src="src/images/logo-bookmark-footer.svg" alt="Bookmark Logo">
-        <ul>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">CONTACT</a></li>
-        </ul>
-        <div class="social-media-links">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="backgroundColor" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
-            </a>
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="backgroundColor" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
-            </a>
+    <footer class="bg-[var(--clr-blue-950)] text-white py-10 md:py-8">
+        <div class="w-1/2 mx-auto flex flex-col gap-12 items-center text-center md:flex-row md:w-11/12 md:justify-evenly lg:justify-between">
+            <img src="src/images/logo-bookmark-footer.svg" alt="Bookmark Logo">
+            <ul class="flex flex-col gap-6 md:flex-row">
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="#">FEATURES</a></li>
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="#">PRICING</a></li>
+                    <li><a class="hover:text-[var(--clr-red-400)]" href="#">CONTACT</a></li>
+            </ul>
+            <div class="flex gap-10 items-center md:gap-4">
+                <a href="#">
+                    <svg class="fill-white hover:fill-[var(--clr-red-400)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="backgroundColor" fill-rule="evenodd" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg>
+                </a>
+                <a href="#">
+                    <svg class="fill-white hover:fill-[var(--clr-red-400)]" xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="backgroundColor" fill-rule="evenodd" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557z"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

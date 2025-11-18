@@ -16,9 +16,13 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch src/styles/scss:src/styles/css"
+    "sass": "sass --watch src/styles/scss:src/styles/css",
+    "tailwind": "tailwindcss -i ./src/styles/css/input.css -o ./src/styles/css/output.css --watch"
   },
   "dependencies": {
     "sass": "^1.94.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.18"
   }
 }
