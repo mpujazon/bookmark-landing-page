@@ -207,17 +207,17 @@
             </div>
             <a class="bg-[var(--clr-blue-600)] text-white font-medium py-3 px-5 rounded-md mb-6 hover:bg-white hover:text-[var(--clr-blue-600)] hover:outline hover:outline-2 hover:outline-[var(--clr-blue-600)] -outline-offset-2" href="#">More Info</a>
         </section>
-        <section>
-            <div>
-                <h3>35,000+ ALREADY JOINED</h3>
-                <h2>Stay up-to-date with what we're doing</h2>
+        <section class="bg-[var(--clr-blue-600)] text-white py-9 flex flex-col gap-8">
+            <div class="w-5/6 mx-auto flex flex-col items-center max-w-[311px]">
+                <h3 class="text-xs leading-[300%] tracking-[5px] font-medium">35,000+ ALREADY JOINED</h3>
+                <h2 class="text-3xl text-center font-medium leading-[135%]">Stay up-to-date with what we're doing</h2>
             </div>
-            <form>
-                <div>
-                    <input type="text" placeholder="Enter your email address" aria-placeholder="Enter your email address">
-                    <p>Whoops, make sure it's an email.</p>
+            <form id="newsletter-form" class="w-5/6 mx-auto flex flex-col items-center gap-4 max-w-[311px]">
+                <div id="input-group" class="w-full">
+                    <input class="w-full p-2 rounded-md text-[var(--clr-blue-950)]" type="text" placeholder="Enter your email address" aria-placeholder="Enter your email address">
+                    <p id="input-tooltip" class="hidden px-2 text-sm font-medium italic">Whoops, make sure it's an email.</p>
                 </div>
-                <button type="submit">Contact Us</button>
+                <button class="bg-[var(--clr-red-400)] py-3 font-['Rubik'] font-medium rounded-md w-full hover:bg-white hover:text-[var(--clr-red-400)] hover:outline hover:outline-[var(--clr-red-600)] hover:outline-2 hover:-outline-offset-2" type="submit">Contact Us</button>
             </form>
         </section>
     </main>

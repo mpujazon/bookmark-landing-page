@@ -78,20 +78,20 @@ const closeAllAnswers = () => {
 let form = document.getElementById("newsletter-form");
 let inputGroup = document.getElementById("input-group");
 let inputTooltip = document.getElementById("input-tooltip");
-let errorIcon = 
+// let errorIcon = 
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     let input = document.querySelector(`#newsletter-form input`);
     if (validEmail(input.value.trim())){
-        alert("Thanks for subscribing!");
         inputGroup.classList.remove("error");
         inputTooltip.classList.add("hidden");
+        form.reset();
+        alert("Thanks for subscribing!");
     }else{
         inputGroup.classList.add("error");
         inputTooltip.classList.remove("hidden");
     }
-    
 });
 
 const validEmail = (input) => {
