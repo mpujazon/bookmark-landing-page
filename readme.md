@@ -21,10 +21,10 @@ Per fer-ho es disposa d'un disseny el qual s'ha de replicar durant cada iteraci�
 
 ## 📋 Requisits
 
-Node.js v25.1.0
-NPM v11.6.2
-SASS v1.94.0
-TailwindCSS v3.4.18
+- Node.js v25.1.0
+- NPM v11.6.2
+- SASS v1.94.0
+- TailwindCSS v3.4.18
 
 ## 🛠️ Instal·lació
 
