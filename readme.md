@@ -3,8 +3,8 @@
 ## 📄 Descripció
 L'objectiu d'aquest exercici és comprendre i fer servir les diferents tecnologies que hi ha per a maquetar pàgines web. Per tant, l'sprint es divideix en 3 iteracions:
 - Implementació 1: Vanilla (HTML + CSS + JS)
-- Implementació 2: IPreprocessadors (SASS, LESS, PreCSS)
-- Implementació 3: Lliberies d'estils (Tailwind o Bootstrap)
+- Implementació 2: Preprocessadors (SASS)
+- Implementació 3: Lliberies d'estils (Tailwind)
 
 Per fer-ho es disposa d'un disseny el qual s'ha de replicar durant cada iteració amb la tecnologia adeqüada.
 
